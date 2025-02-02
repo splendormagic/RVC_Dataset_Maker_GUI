@@ -107,7 +107,7 @@ outputs = [
 # Custom HTML header
 html_header = """
 <div style="text-align: center; padding: 20px; background-color: #f0f0f0; border-radius: 10px;">
-    <h1 style="color: #333; font-family: Arial, sans-serif;">Bahaa Mahmoud TUT - Dataset Maker For RVC</h1>
+    <h1 style="color: #333; font-family: Arial, sans-serif;">Bahaa Ai - Dataset Maker For RVC</h1>
     <p style="color: #666; font-family: Arial, sans-serif;">
         This code cleans up your uploaded audio files from noise and music, removes silence and compiles it all into a single audio file that you can use for training directly.
     </p>
