@@ -14,7 +14,3 @@ def install_dependencies():
     subprocess.run(['apt-get', 'install', '-y', 'ffmpeg'])
 
 install_dependencies()
-
-from IPython.display import clear_output
-clear_output()
-print("Installed")
