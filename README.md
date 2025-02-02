@@ -8,3 +8,5 @@ This tool cleans up your uploaded audio files from noise and music, removes sile
 - Extract vocals from uploaded audio files or songs.
 - Remove silence from audio.
 - Merge all uploaded audio files into one mp3 file.
+
+  ![App Screenshot](screenshot.png)
