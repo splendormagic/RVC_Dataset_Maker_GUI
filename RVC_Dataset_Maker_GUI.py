@@ -47,8 +47,8 @@ def process_audio(merged_audio_path):
     subprocess.run(f"python3 -m demucs.separate -n {demucs_model} -o vocals --two-stems=vocals {merged_audio_path}", shell=True)
 
     # Define paths for silence removal
-    input_vocals_path = '/content/vocals/htdemucs/merged_audio/vocals.wav'
-    output_vocals_path = '/content/vocals/vocals_cut.wav'
+    input_vocals_path = '/content/RVC_Dataset_Maker_GUI/vocals/htdemucs/merged_audio/vocals.wav'
+    output_vocals_path = '/content/RVC_Dataset_Maker_GUI/vocals/vocals_cut.wav'
     silence_thresh = -40  # silence threshold (in dB)
     min_silence_len = 10  # minimum length of silence (in ms)
 
@@ -78,7 +78,7 @@ def process_audio(merged_audio_path):
 
     # Convert WAV to MP3
     audio = AudioSegment.from_wav(output_vocals_path)
-    dataset_path = '/content/dataset.mp3'
+    dataset_path = '/content/RVC_Dataset_Maker_GUI/dataset.mp3'
     audio.export(dataset_path, format='mp3')
 
     return dataset_path
